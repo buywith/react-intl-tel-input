@@ -319,14 +319,6 @@ var IntlTelInput = function (_Component) {
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "initRequests", function () {
-      import('libphonenumber-js-utils').then(function () {
-        _this.loadUtils();
-
-        _this.utilsScriptDeferred.resolve();
-      }).catch(function () {
-        return 'An error occurred while loading the component';
-      });
-
       if (_this.tempCountry === 'auto') {
         _this.loadAutoCountry();
       } else {
