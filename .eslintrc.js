@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['eslint-config-airbnb', 'plugin:prettier/recommended'],
-  plugins: ['react', 'import', 'security', 'prettier'],
+  plugins: ['react', 'import', 'prettier'],
   parser: 'babel-eslint',
   env: {
     browser: true,
